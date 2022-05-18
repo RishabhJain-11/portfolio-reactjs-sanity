@@ -1,0 +1,179 @@
+.app__navbar {
+    width: 100%;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.25);
+    // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur(4px);//The backdrop-filter CSS property lets you apply graphical effects such as blurring or color shifting to the area behind an element. Because it applies to everything behind the element, to see the effect you must make the element or its background at least partially transparent.
+
+    -webkit-backdrop-filter: blur(4px);//The term 'webkit' is used in the CSS syntax for rendering content in Safari and Chrome browsers.Webkit code may need to be added in CSS to ensure it renders correctly on Chrome and Safari due to the lack of cross-compatibility.
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: fixed;//navbar will remains fixed at its position.
+    z-index: 2;//to make it appear above the content
+  }
+
+  .app__navbar-logo { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;//Aligns flex items along the cross axis of the current line of the flex container.
+    // Syntax: normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ]
+  
+    //The magic of scss comes here into picture when we have to not repeat the classes again and again.Just need to nest it in the same function.
+    img {
+      width: 90px;//this is set the width of the img
+      height: 20px;//this is set the height of the img
+  
+      @media screen and (min-width: 2000px) {
+          //this is to have screen responsive.
+        width: 180px;
+        height: 40px;
+      }
+    }
+  }
+  
+//   .app__navbar-links {
+//     flex: 1;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+  
+//     list-style: none;
+  
+//     li {
+//       margin: 0 1rem;
+//       cursor: pointer;
+  
+//       flex-direction: column;
+  
+//       div {
+//         width: 5px;
+//         height: 5px;
+//         background: transparent;
+//         border-radius: 50%;
+  
+//         margin-bottom: 5px;
+//       }
+  
+//       a {
+//         color: var(--gray-color);
+//         text-decoration: none;
+//         flex-direction: column;
+  
+//         text-transform: uppercase;
+//         font-weight: 500;
+  
+//         transition: all 0.3s ease-in-out;
+  
+//         &:hover {
+//           color: var(--secondary-color);
+//         }
+//       }
+  
+//       &:hover {
+//         div {
+//           background: var(--secondary-color);
+//         }
+//       }
+//     }
+  
+//     @media screen and (max-width: 900px) {
+//       display: none;
+//     }
+//   }
+  
+//   .app__navbar-menu {
+//     width: 35px;
+//     height: 35px;
+//     border-radius: 50%;
+//     position: relative;
+  
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: var(--secondary-color);
+  
+  
+//     svg {
+//       width: 70%;
+//       height: 70%;
+//       color: var(--white-color);
+//     }
+  
+//     div {
+//       position: fixed;
+//       top: 0;
+//       bottom: 0;
+//       right: 0;
+//       z-index: 5;
+  
+//       padding: 1rem;
+  
+//       width: 80%;
+//       height: 100vh;
+      
+//       display: flex;
+//       justify-content: flex-end;
+//       align-items: flex-end;
+//       flex-direction: column;
+      
+//       background: url('../../assets/bgWhite.png');
+//       background-color: var(--white-color);
+//       background-size: cover;
+//       background-repeat: repeat;
+  
+//       /* top box shadow */
+
+//       box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+  
+//       svg {
+//         width: 35px;
+//         height: 35px;
+//         color: var(--secondary-color);
+//         margin: 0.5rem 1rem;
+//       }
+  
+//       ul {
+//         list-style: none;
+//         margin: 0;
+//         padding: 0;
+//         height: 100%;
+//         width: 100%;
+  
+//         display: flex;
+//         justify-content: flex-start;
+//         align-items: flex-start;
+//         flex-direction: column;
+  
+//         li {
+//           margin: 1rem;
+  
+//           a {
+//             color: var(--gray-color);
+//             text-decoration: none;
+//             font-size: 1rem;
+//             text-transform: uppercase;
+//             font-weight: 500;
+  
+//             transition: all 0.3s ease-in-out;
+  
+//             &:hover {
+//               color: var(--secondary-color);
+//             }
+//           }
+//         }
+//       }
+  
+//       @media screen and (min-width: 900px) {
+//         display: none;
+//       }
+//     }
+  
+//     @media screen and (min-width: 900px) {
+//       display: none;
+//     }
+//   }

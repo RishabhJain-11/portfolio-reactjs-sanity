@@ -6,10 +6,10 @@ import Testimonial from './Testimonial/Testimonial';
 import Work from './Work/Work';
 
 export {
-  About,
-  Footer,
-  Header,
-  Skills,
-  Testimonial,
-  Work,
+    About,
+    Footer,
+    Header,
+    Skills,
+    Testimonial,
+    Work,
 };

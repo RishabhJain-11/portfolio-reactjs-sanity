@@ -17,21 +17,18 @@
     z-index: 2;//to make it appear above the content
   }
 
-  .app__navbar-logo { 
+  .app__navbar-logo {
     display: flex;
     justify-content: flex-start;
-    align-items: center;//Aligns flex items along the cross axis of the current line of the flex container.
-    // Syntax: normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ]
+    align-items: center;
   
-    //The magic of scss comes here into picture when we have to not repeat the classes again and again.Just need to nest it in the same function.
     img {
-      width: 90px;//this is set the width of the img
-      height: 70px;//this is set the height of the img
-      border-radius: 10px;
+      width: 90px;
+      height: 20px;
+  
       @media screen and (min-width: 2000px) {
-          //this is to have screen responsive.
         width: 180px;
-        height: 30px;
+        height: 40px;
       }
     }
   }

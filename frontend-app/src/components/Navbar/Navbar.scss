@@ -26,12 +26,12 @@
     //The magic of scss comes here into picture when we have to not repeat the classes again and again.Just need to nest it in the same function.
     img {
       width: 90px;//this is set the width of the img
-      height: 20px;//this is set the height of the img
-  
+      height: 70px;//this is set the height of the img
+      border-radius: 10px;
       @media screen and (min-width: 2000px) {
           //this is to have screen responsive.
         width: 180px;
-        height: 40px;
+        height: 30px;
       }
     }
   }

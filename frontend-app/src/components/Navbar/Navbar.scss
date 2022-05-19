@@ -36,144 +36,144 @@
     }
   }
   
-//   .app__navbar-links {
-//     flex: 1;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
+  .app__navbar-links {
+    flex: 1;
+    display: flex;//as you app,y flex prop everything appears in row
+    justify-content: center;
+    align-items: center;
   
-//     list-style: none;
+    list-style: none;
   
-//     li {
-//       margin: 0 1rem;
-//       cursor: pointer;
+    li {
+      margin: 0 1rem;
+      cursor: pointer;
   
-//       flex-direction: column;
+      flex-direction: column;//The flex-direction CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed). 
   
-//       div {
-//         width: 5px;
-//         height: 5px;
-//         background: transparent;
-//         border-radius: 50%;
+      div {//this is the dot above every link.
+        width: 5px;
+        height: 5px;
+        background: transparent;
+        border-radius: 50%;
   
-//         margin-bottom: 5px;
-//       }
+        margin-bottom: 5px;
+      }
   
-//       a {
-//         color: var(--gray-color);
-//         text-decoration: none;
-//         flex-direction: column;
+      a {
+        color: var(--gray-color);//use of css variables that we created inside index.css
+        text-decoration: none;
+        flex-direction: column;
   
-//         text-transform: uppercase;
-//         font-weight: 500;
+        text-transform: uppercase;
+        font-weight: 500;//to bold the font
   
-//         transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
   
-//         &:hover {
-//           color: var(--secondary-color);
-//         }
-//       }
+        &:hover {
+          color: var(--secondary-color);
+        }
+      }
   
-//       &:hover {
-//         div {
-//           background: var(--secondary-color);
-//         }
-//       }
-//     }
+      &:hover {
+        div {
+          background: var(--secondary-color);
+        }
+      }
+    }
   
-//     @media screen and (max-width: 900px) {
-//       display: none;
-//     }
-//   }
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
   
-//   .app__navbar-menu {
-//     width: 35px;
-//     height: 35px;
-//     border-radius: 50%;
-//     position: relative;
+  .app__navbar-menu {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
   
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
   
   
-//     svg {
-//       width: 70%;
-//       height: 70%;
-//       color: var(--white-color);
-//     }
+    svg {
+      width: 70%;
+      height: 70%;
+      color: var(--white-color);
+    }
   
-//     div {
-//       position: fixed;
-//       top: 0;
-//       bottom: 0;
-//       right: 0;
-//       z-index: 5;
+    div {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 5;
   
-//       padding: 1rem;
+      padding: 1rem;
   
-//       width: 80%;
-//       height: 100vh;
+      width: 80%;
+      height: 100vh;
       
-//       display: flex;
-//       justify-content: flex-end;
-//       align-items: flex-end;
-//       flex-direction: column;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-direction: column;
       
-//       background: url('../../assets/bgWhite.png');
-//       background-color: var(--white-color);
-//       background-size: cover;
-//       background-repeat: repeat;
+      background: url('../../assets/bgWhite.png');
+      background-color: var(--white-color);
+      background-size: cover;
+      background-repeat: repeat;
   
-//       /* top box shadow */
+      /* top box shadow */
 
-//       box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+      box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
   
-//       svg {
-//         width: 35px;
-//         height: 35px;
-//         color: var(--secondary-color);
-//         margin: 0.5rem 1rem;
-//       }
+      svg {
+        width: 35px;
+        height: 35px;
+        color: var(--secondary-color);
+        margin: 0.5rem 1rem;
+      }
   
-//       ul {
-//         list-style: none;
-//         margin: 0;
-//         padding: 0;
-//         height: 100%;
-//         width: 100%;
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
   
-//         display: flex;
-//         justify-content: flex-start;
-//         align-items: flex-start;
-//         flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
   
-//         li {
-//           margin: 1rem;
+        li {
+          margin: 1rem;
   
-//           a {
-//             color: var(--gray-color);
-//             text-decoration: none;
-//             font-size: 1rem;
-//             text-transform: uppercase;
-//             font-weight: 500;
+          a {
+            color: var(--gray-color);
+            text-decoration: none;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
   
-//             transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
   
-//             &:hover {
-//               color: var(--secondary-color);
-//             }
-//           }
-//         }
-//       }
+            &:hover {
+              color: var(--secondary-color);
+            }
+          }
+        }
+      }
   
-//       @media screen and (min-width: 900px) {
-//         display: none;
-//       }
-//     }
+      @media screen and (min-width: 900px) {
+        display: none;
+      }
+    }
   
-//     @media screen and (min-width: 900px) {
-//       display: none;
-//     }
-//   }
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+  }

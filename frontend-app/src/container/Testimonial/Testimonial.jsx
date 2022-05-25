@@ -76,3 +76,12 @@ export default AppWrap(
   'testimonial',
   'app__primarybg',
 );
+
+
+
+/**
+ * web developer - 
+ * blockchain - can do with web dev in mind 
+ * app - less resources but can do with react native.
+ * devops - have to do if doing backend
+ */

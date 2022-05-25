@@ -131,8 +131,8 @@ export default AppWrap(
  */
 
 /**
- * open src
- * hackathons & awards
- * volunteering
- * blogs
+ * open src - similar to exp section.
+ * hackathons & awards - similar to work exp section
+ * volunteering - not much only a small section
+ * blogs - similar to project section
  */
